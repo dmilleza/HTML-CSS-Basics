@@ -1,0 +1,52 @@
+* Internet
+- The internet is a global network of computers where each computer/router has
+an IP address to uniquely identify them, just like a home address. 
+- IP addresses are assigned to you by your internet service provider, e.g. 
+73.158.6.61.
+- Even if you have multiple devices in your home, each of these devices all have 
+a private IP address that is only local to your home network. 
+- Your router has a public IP address and that's the address the internet 
+actually sees. All the private ones for each device are only within your home 
+network or office network. 
+- The way computers talk to eachother is over the TCP/IP protocol. A protocol 
+is a way for computers to communicate.
+- HTTP is an application layer protocol, which runs over TCP, that is responsible
+for handling web traffic between a browser and a web server. 
+- Other application layer protocols include SMTP which deals with emails, FTP 
+and SSH deal with transferring files over the internet.
+- Websites/webpages are files stored on computers that run a piece of software
+called a web server. 
+- You can build a website on your local machine and then you would upload it to 
+a server that a hosting company owns. 
+- Domain names can be purchased from registrars and linked to your hosting 
+account/web server. 
+- When you type in 'http://www.facebook.com' there's something called a DNS
+or domain name service that maps that domain to the correct IP address of 
+facebook.com. 
+
+* Process of Loading a Webpage 
+1. User types in 'google.com' into a web browser
+2. DNS server looks at the domain name and maps it to the IP address that's 
+needed, e.g. 192.168.1.4.
+3. Once it gets that IP address, it then makes a HTTP request to the web server
+of that IP address. 
+4. That web server will return a response with the HTML/CSS files needed for
+google.com to be loaded in the user's browser. 
+- HTTP requests are made when you load a webpage and when you submit a form. 
+
+* HTML
+- Hypertext Markup Language is not a programming language. 
+- It is purely visual and is a markup for creating webpages/documents. 
+
+* CSS
+- Stylesheet language used for styling HTML elements.
+- Can be extended with Sass/Less. 
+
+ * Roles of Web Technologies
+ - HTML: content display/structure
+ - CSS: style and design
+ - JS: dynamic front end programming
+ - PHP, Python, C#, JS: backend programming
+ - MySQL, MongoDB: database/storage
+
+- 

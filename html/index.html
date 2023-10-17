@@ -1,0 +1,199 @@
+<!-- tells the browser what type of document it is -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- we can remove this and it will still be UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- important for responsive design, makes website look good on all screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- deals with browser compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="" />
+    <!-- specifies/describes what's on the page, you want to put some keywords -->
+    <meta name="description" content="" />
+    <!-- keywords used to be important before, not as much now -->
+    <meta name="keywords" content="" />
+    <!-- the title is what shows in the search engine -->
+    <title></title>
+  </head>
+  <body style="background-color: grey">
+    <!-- only want to have one h1 tag per page -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- b, i, u tags have been depricated  -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+      nostrum id ex,
+      <strong>voluptatem fuga enim. Eveniet dicta voluptas</strong> molestiae
+      tempore? <em>Pariatur incidunt qui blanditiis </em>dolores quos sequi unde
+      quaerat vel cupiditate, quasi praesentium enim nesciunt ipsam quia
+      assumenda modi deserunt facilis? Sint dolor eos ullam quaerat facilis
+      earum quia doloremque <br />
+      in? Molestias obcaecati excepturi quo facere accusantium. Nemo obcaecati
+      enim exercitationem laudantium animi mollitia eum reiciendis eveniet.
+      Incidunt perferendis, ipsa voluptatum doloribus consequatur nisi
+      doloremque, hic a iste corrupti aperiam quo cupiditate ducimus repudiandae
+      blanditiis eius itaque deserunt quasi ab nemo saepe
+      <del>similique iure? Animi</del> sapiente itaque facilis fugit?
+    </p>
+    <hr />
+    <!-- external link -->
+    <!-- use target attribute to open in new window -->
+    <p>
+      <a href="http://google.com" target="_blank">Click for Google</a>
+    </p>
+    <!-- internal link  -->
+    <p>
+      <a href="/html/internal.html">Internal link</a>
+    </p>
+    <!-- remote image -->
+    <img
+      src="https://source.unsplash.com/200x200/?gaming"
+      alt="random gaming image"
+    />
+    <!-- unordered lists -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+    <!-- ordered list -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <!-- tables are used for tabular data  -->
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yotsuba</td>
+          <td>Nakano</td>
+          <td>yotsuba@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Itsuki</td>
+          <td>Nakano</td>
+          <td>itsuki@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="">
+      <div>
+        <!-- want "for" attribute to match id of input  -->
+        <label for="name">Name</label>
+        <br />
+        <!-- clicking on label will select input of matching id  -->
+        <!-- name attribute is used on the server side -->
+        <!-- use value for default text value -->
+        <input type="text" name="name" id="name" value="Yotsuba" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <!-- placeholder is recommended -->
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter an email"
+        />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <br />
+        <!-- textarea is for more content than a text input -->
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <div>
+        <label for="birthday">Birthday</label>
+        <br />
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" id="membership" value="simple" />
+        Simple
+        <!-- use checked attribute for default option -->
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+          checked
+        />
+        Standard
+        <input type="radio" name="membership" id="membership" value="super" />
+        Super
+      </div>
+      <div>
+        <label for="membership">I like..</label>
+        <input type="checkbox" name="likes" id="likes " value="bike" /> bike
+        <input type="checkbox" name="likes" id="likes" value="car" checked />
+        car <input type="checkbox" name="likes" id="likes " value="boat" /> boat
+      </div>
+      <input type="submit" value="Submit" />
+      <!-- button tag does same thing -->
+      <button type="submit">Submit</button>
+      <!-- clears everything except for default stuff -->
+      <button type="reset">Reset</button>
+    </form>
+    <hr />
+    <a
+      href="https://www.w3schools.com/html/html_blocks.asp"
+      target="_blank"
+      style="border: 2px solid red"
+      >HTML Block Elements</a
+    >
+    <!-- paragraphs have margins by default -->
+    <p style="border: 2px solid green">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+      cupiditate inventore minus hic nesciunt quidem optio blanditiis beatae
+      tempora amet.
+    </p>
+    <p style="border: 2px solid green">Lorem</p>
+    <ul style="border: 2px solid green">
+      <li>List is block</li>
+      <li style="border: 2px solid blue">List item is block</li>
+    </ul>
+    <div id="main-content">
+      There is no difference between id and class selectors, but it is good
+      practice for an id to be for one element while multiple elements can have
+      the same class.
+    </div>
+    <p>This is the start of &nbsp; &nbsp; entities</p>
+    <p>Greater than &gt; and less than &lt;</p>
+    <p>Copyright &copy;</p>
+    <p>Currency: cents &cent; pounds &pound; yen &yen; euro &euro;</p>
+    <hr />
+    <code>Looks like code</code>
+    <p> Looks like keyboard text: 
+      <kbd>Ctrl + D</kbd>
+    </p>
+  </body>
+</html>
