@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  background-color: #c5c1c1;
+  /* font-family: Roboto Condensed, Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* common line height size for body  */
+  /* line-height: 1.6; */
+}
+
+h1 {
+  color: red;
+}
+
+#welcome p span {
+  font-weight: bolder;
+}
+
+#about p span {
+  font-style: italic;
+} */
+
+/* colors */
+
+/* color name */
+ #colors h1 {
+  color: pink;
+}
+
+/* rgb */
+#colors h2 {
+  /* takes in three values: red, green, and blue,
+    each value should be between 0-255 */
+  color: rgb(255, 0, 255);
+}
+
+/* hex is most common for colors */
+/* numbers: 0-9, letters: a-f */
+/* works like rgb */
+#colors h3 {
+  color: #ff00ff;
+}
+/* if all values are the same,
+only need three  */
+#colors h4 {
+  color: #ddd;
+}
+
+/* backgrounds and borders */
+#box-1 {
+  background-color: blanchedalmond;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+#box-2 {
+  background: #333;
+  color: #fff;
+  border-top: 3px solid blue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* can still round without border */
+  border-bottom-left-radius: 20px;
+}
+#box-3 {
+  /* background-image: url('https://source.unsplash.com/200x200/?gaming');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; */
+  /* does same thing as above code combined */
+  background: url('https://source.unsplash.com/200x200/?gaming') no-repeat
+    center center/cover;
+  color: #fff;
+  height: 300px;
+  width: 600px;
+}
+
+/* margin and padding */
+#marg-pad * {
+  margin: 0;
+  /* using box sizing border box makes it so that the width 
+    is still 500px, but the padding/border/content width is combined*/
+  box-sizing: border-box;
+}
+
+.box:first-child {
+  background: #f4f4f4;
+  border: 2px solid #777;
+  width: 500px;
+  padding: 120px;
+}
+
+.box:nth-child(2) {
+  border: 2px solid #777;
+  /* padding shorthand = top/bottom left/right */
+  padding: 10px 20px;
+}
+
+/* float and alignment */
+
+#float {
+  /* should always use max-width on containers so 
+  that the content doesn't overflow  */
+  max-width: 500px;
+  margin: auto;
+}
+
+.fbox p {
+  /* makes text even along edges (looks kinda ugly) */
+  text-align: justify;
+}
+
+/* links and buttons */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: coral;
+}
+
+/* don't use this */
+#link-btn a:visited {
+  color: red;
+}
+
+/* don't use this */
+#link-btn a:active {
+  color: red;
+}
+
+.btn {
+  background: #4c6ca0;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #f4f4f4;
+  background: #446190;
+}
+
+/* navigation menu */
+.side-menu {
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+}
+
+.side-menu li {
+  font-size: 18px;
+  line-height: 2.4em;
+  border-bottom: 1px dotted #ddd;
+}
+
+/* don't want border under last list item */
+.side-menu li:last-child {
+  border: none;
+}
+
+.side-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.side-menu li a:hover {
+  color: coral;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #4c6ca0;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+
+.navbar li a:hover {
+  background-color: #446190;
+  color: #f4f4f4;
+}
+
+/* display */
+
+#display li {
+  display: inline;
+}
+
+#display img {
+  /* can't do margin auto on an inline element */
+  display: block;
+  margin: auto;
+}
+
+#display .box {
+  width: 32%;
+  display: inline-block;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.pbox {
+  width: 100px;
+  height: 100px;
+}
+
+#pbox-1 {
+  background: red;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+#pbox-2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: green;
+}
+#pbox-3 {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+
+  background: blue;
+}
+#pbox-4 {
+  /* position: fixed; */
+  background: indigo;
+}
+#pbox-5 {
+  position: sticky;
+  background: violet;
+}
+
+.pcontainer {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background: #333;
+}
+
+#sform {
+  background-color: #4c6ca0;
+  line-height: 1.8;
+  color: #fff;
+}
+
+#fcontainer {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-wrap {
+  background: #fff;
+  padding: 15px 25px;
+  color: #333;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  color: #666;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-wrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  background: #49c1a2;
+  cursor: pointer;
+  border: none;
+}
+
+.form-wrap button:hover {
+  background: #37a08e;
+}
+
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+#sform a {
+  text-decoration: none;
+}
+
+#sform footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#sform footer a {
+  color: #49c1a2;
+}
+
+#vis h1 {
+  /* display: none; */
+  /* visibility: hidden; */
+  color: red;
+}
+
+/* important flag overrides CSS rules */
+.imp{
+  color: blue !important; 
+}

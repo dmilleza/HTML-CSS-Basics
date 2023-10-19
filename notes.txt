@@ -49,4 +49,37 @@ google.com to be loaded in the user's browser.
  - PHP, Python, C#, JS: backend programming
  - MySQL, MongoDB: database/storage
 
-- 
+* CSS Colors
+- best black background replacement is #333
+- best white background replacement is #f4f4f4
+
+* Backgrounds and Borders
+- jpg files cannot be transparent, but png files can be.
+
+- floats are not useful anymore because they are a pain with responsive
+design and dealing with mobile devices.
+
+- link:visited and active are not useful 
+
+- can't do margin: auto on an inline element
+- cannot use width on an inline element 
+- inline-block allows us to add width on inline elements
+- box sizing: border box let's us use the width we specify
+
+* Position Values
+- static: not effected by top, bottom, left, right properties/values
+- relative: tblr values cause element to be moved from its normal
+position 
+- absolute: positioned relative to its parent element that it is 
+positioned "relative" 
+- fixed: positioned relative to the viewport
+- sticky: positioned based on scroll position 
+- z index property let's you put elements in front or behind one
+another; the higher the z index, the more closer it is to you 
+- positioning isn't used that much in modern websites/UIs because
+of responsiveness with mobile devices
+
+- visibility: hidden is like display: none except it doesn't take
+it out of the document
+- !important flag overrides CSS rules 
+- avoid using negative margin values 
