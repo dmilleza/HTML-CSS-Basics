@@ -38,6 +38,10 @@ google.com to be loaded in the user's browser.
 - Hypertext Markup Language is not a programming language. 
 - It is purely visual and is a markup for creating webpages/documents. 
 
+- when you have a homepage of a website, you have to call it "index.html"
+because when you go to "___.com", it's going to look for that file as the 
+homepage. 
+
 * CSS
 - Stylesheet language used for styling HTML elements.
 - Can be extended with Sass/Less. 
@@ -83,3 +87,9 @@ of responsiveness with mobile devices
 it out of the document
 - !important flag overrides CSS rules 
 - avoid using negative margin values 
+
+- you can have multiple footer tags, e.g. the bottom of an article 
+
+- to change the color of a selected input field, use :focus then 
+outline: none and border-color
+
