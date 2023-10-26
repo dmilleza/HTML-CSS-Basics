@@ -93,3 +93,21 @@ it out of the document
 - to change the color of a selected input field, use :focus then 
 outline: none and border-color
 
+* Responsive Design 
+- set the viewport/scale
+- use fluid widths as opposed to fixed
+- media queries
+- rem units over px
+- mobile first method
+
+- when you do mobile first design, usually you'll put base styling 
+for mobile then use min-width media queries for larger screens 
+
+- using em for padding will point to the element's font size, not
+its parent element, so em is not useful
+- rem is used because it looks at the root html element
+- making the html tag's font size 10px is common because rem is 
+easy to use; 2rem on 10px is 20px
+- vw is rarely used
+- vh is great for landing pages because as soon as you scroll down, 
+you will see the content below the image
