@@ -111,3 +111,28 @@ easy to use; 2rem on 10px is 20px
 - vw is rarely used
 - vh is great for landing pages because as soon as you scroll down, 
 you will see the content below the image
+
+* Flexbox
+- replaces floats and is better to work with 
+- all direct child elements are flex items
+- main axis is left to right, cross axis is up to down
+- justify content: align horizontal
+- align items: align vertical 
+- align content: align when extra space is cross axis 
+- flex direction column changes the main axis up to down 
+
+* Icon Next to Website Title
+- to change png file into ico file, go to dynamic drive favicon generator
+- choose file then create icon, then move icon to root and not images 
+- copy the link tag and put it above stylesheet link tags
+- to reload the cache, on mac use 'shift cmd r'
+- if doesn't show up, make sure href is correct 
+
+* Types of Web Hosting 
+- Shared hosting: one account of many on a server, used for small websites 
+- Virtual private server hosting: can create multiple shared accounts, great 
+if you have more than one website 
+- Dedicated server: your own actual server, you rent out a physical machine 
+- Reseller hosting 
+- Cloud hosting: multiple servers work together, great for large apps 
+- Static hosting
