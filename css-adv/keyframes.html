@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animate1;
+        animation-duration: 5s; */
+
+        /* iteration count default is 1 */
+        /* animation-iteration-count: 2; */
+
+        /* prevents it from resetting */
+        /* animation-fill-mode: forwards; */
+
+        /* waits 2 seconds to animate */
+        /* animation-delay: 2s; */
+
+        /* animation-direction: alternate-reverse; */
+
+        /* basically the motion */
+        /* animation-timing-function: ease-out; */
+
+        /* shortcut for everything above */
+        animation: animate1 5s forwards 1s ease-in-out;
+      }
+
+      @keyframes animate1 {
+        /* don't need from since it's already at 200px */
+        /* from {
+          width: 200px;
+        } */
+        from {
+          top: 0;
+        }
+        to {
+          top: 300px;
+          width: 600px;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
