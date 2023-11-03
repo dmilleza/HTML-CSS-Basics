@@ -136,3 +136,16 @@ if you have more than one website
 - Reseller hosting 
 - Cloud hosting: multiple servers work together, great for large apps 
 - Static hosting
+
+- no need to use box shadows, they look early 2000's
+- no need to use text shadows
+
+- CSS variables can be used for primary, secondary, and light grey colors 
+
+- when you animate something, you're taking a property that can be animated
+such as width, position, color, opacity, etc. where you have midpoints. 
+
+- transitions are similar to keyframe animations except they happen on an 
+event
+
+- transform:skew() is great for diagonal lines
