@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Presentation</title>
+    <style></style>
+  </head>
+  <body>
+    <section id="page-1" class="page">
+      <h1>Welcome To My Presentation</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rerum
+        sint eum nobis natus assumenda ullam consequuntur molestiae nulla
+        provident id libero corporis laudantium voluptatum, ducimus, labore qui
+        eligendi? Veritatis nobis blanditiis delectus harum aspernatur quisquam
+        perferendis soluta dolorem.
+      </p>
+      <div>
+        <a href="#page-2" class="btn"
+          >Next Page <i class="fa fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+
+    <section id="page-2" class="page">
+      <h1>Page 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rerum
+        sint eum nobis natus assumenda ullam consequuntur molestiae nulla
+        provident id libero corporis laudantium voluptatum, ducimus, labore qui
+        eligendi? Veritatis nobis blanditiis delectus harum aspernatur quisquam
+        perferendis soluta dolorem.
+      </p>
+      <div>
+        <a href="#page-1" class="btn btn-dark"
+          >Prev Page <i class="fa fa-arrow-circle-up"></i
+        ></a>
+        <a href="#page-3" class="btn"
+          >Next Page <i class="fa fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+    <section id="page-3" class="page">
+      <h1>Page 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rerum
+        sint eum nobis natus assumenda ullam consequuntur molestiae nulla
+        provident id libero corporis laudantium voluptatum, ducimus, labore qui
+        eligendi? Veritatis nobis blanditiis delectus harum aspernatur quisquam
+        perferendis soluta dolorem.
+      </p>
+      <div>
+        <a href="#page-2" class="btn btn-dark"
+          >Prev Page <i class="fa fa-arrow-circle-up"></i
+        ></a>
+        <a href="#page-4" class="btn"
+          >Next Page <i class="fa fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+    <section id="page-4" class="page">
+      <h1>Page 4</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit rerum
+        sint eum nobis natus assumenda ullam consequuntur molestiae nulla
+        provident id libero corporis laudantium voluptatum, ducimus, labore qui
+        eligendi? Veritatis nobis blanditiis delectus harum aspernatur quisquam
+        perferendis soluta dolorem.
+      </p>
+      <div>
+        <a href="#page-3" class="btn"
+          >Prev Page <i class="fa fa-arrow-circle-up"></i
+        ></a>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault()
+          const hash = this.hash
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          )
+        }
+      })
+    </script>
+  </body>
+</html>
