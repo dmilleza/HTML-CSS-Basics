@@ -149,3 +149,7 @@ such as width, position, color, opacity, etc. where you have midpoints.
 event
 
 - transform:skew() is great for diagonal lines
+
+- with a checkbox, you can style it when it is in a checked state
+- rgba is useful for adding transparency to the color
+- a stylesheet can use styles from a preceding stylesheet in the head
