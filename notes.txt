@@ -153,3 +153,5 @@ event
 - with a checkbox, you can style it when it is in a checked state
 - rgba is useful for adding transparency to the color
 - a stylesheet can use styles from a preceding stylesheet in the head
+
+- overflow:hidden prevents scrollbars and includes all the content
