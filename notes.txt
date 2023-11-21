@@ -155,3 +155,13 @@ event
 - a stylesheet can use styles from a preceding stylesheet in the head
 
 - overflow:hidden prevents scrollbars and includes all the content
+
+* Grid
+- similar to flexbox but more powerful and difficult
+- two dimensional layouts
+- can use align-items and justify-content
+- grid-template-columns defines width and number of columns
+- the most common unit when using grid is fr, which is a fraction
+- minmax and autofit can make your grid responsive, good for image galleries
+- grid template areas allows us to visually map out the alignment of our
+elements through CSS
