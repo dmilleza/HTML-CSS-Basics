@@ -165,3 +165,6 @@ event
 - minmax and autofit can make your grid responsive, good for image galleries
 - grid template areas allows us to visually map out the alignment of our
 elements through CSS
+
+- by default, images will stretch beyond their containers, but using width:100%
+will stop it
