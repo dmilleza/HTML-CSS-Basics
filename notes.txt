@@ -168,3 +168,19 @@ elements through CSS
 
 - by default, images will stretch beyond their containers, but using width:100%
 will stop it
+
+* SASS 
+- Syntactically Awesome StyleSheets is a CSS precompiler that ehances the 
+functionality of CSS
+- uses .scss or .sass file extensions
+- the browser does not read Sass, it must be compiled
+- sass files are compiled to normal CSS files
+- includes variables, conditionals, nesting, inheritance, imports, operations
+and calculations, functions
+- if you use Sass with Bootstrap, every element like the buttons or navbar have
+their own separate partial file with just those styles
+- using an underscore for a scss file name tells the sass compiler it is a
+partial and not to compile it
+- nesting is similar to nesting in HTML
+- the main difference between a function and a mixin is a function actually
+returns something while a mixin is a set of styles you want to include
