@@ -184,3 +184,6 @@ partial and not to compile it
 - nesting is similar to nesting in HTML
 - the main difference between a function and a mixin is a function actually
 returns something while a mixin is a set of styles you want to include
+
+- in order to use node sass, you need to create a script that runs 
+"node-sass -w scss/ -o dist/css/ --recursive"
