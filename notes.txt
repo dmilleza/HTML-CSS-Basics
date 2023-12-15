@@ -187,3 +187,13 @@ returns something while a mixin is a set of styles you want to include
 
 - in order to use node sass, you need to create a script that runs 
 "node-sass -w scss/ -o dist/css/ --recursive"
+- to have hovering lines under text not push up the text when hovered, use 
+border-bottom: 3px transparent solid at first then color when hovered
+- to select elements with a specific string inside the class, use 
+"a[class^='btn-']
+- config file is for varibles, functions, and mixins
+- when you create a new partial, you might want to restart server with 
+control + C and then npm run sass. If you don't see any changes that you make 
+in your sass files, always try that
+- being repetitive is a good thing because you want to stay consistent with 
+markup and styling
